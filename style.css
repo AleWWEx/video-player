@@ -1,0 +1,65 @@
+/* Сброс стандартных отступов */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #111;
+}
+
+.video-player {
+  width: 80%;
+  max-width: 800px;
+  position: relative;
+}
+
+video {
+  width: 100%;
+  display: block;
+  background: #000;
+}
+
+.controls {
+  background: #222;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#playBtn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="range"] {
+  flex: 1;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #444;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#time {
+  font-size: 14px;
+  white-space: nowrap;
+}
