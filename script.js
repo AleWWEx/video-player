@@ -38,6 +38,10 @@ video.addEventListener('timeupdate', updateProgress);
 
 video.addEventListener('loadedmetadata', updateProgress);
 
+setTimeout(() => {
+    updateProgress();
+}, 500);
+
 volumeControle.addEventListener('input', () => {
     video.volume = volumeControle.value;
 });
